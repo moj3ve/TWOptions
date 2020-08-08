@@ -1,0 +1,9 @@
+Package: com.crazymind90.twoptions
+Name: TWOptions
+Depends: mobilesubstrate
+Version: 1.0
+Architecture: iphoneos-arm
+Description: Follow , Tweet and retweet confirmation alert
+Maintainer: @CrazyMind90
+Author: @CrazyMind90
+Section: Tweaks
