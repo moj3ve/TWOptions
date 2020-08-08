@@ -69,4 +69,26 @@ return;
 
 
 
+%hook T1PersistentComposeViewController
+-(void) _t1_didTapReply:(id)arg {
+
+
+  [CMManager InitAlertWithTitle:@"Reply ?" Message:nil Buttons:@[@"YES!"] CancelButtonTitle:@"Dismiss" AlertStyle:UIAlertControllerStyleAlert handler:^(NSString * _Nullable ButtonTitle) {
+
+
+        if ([ButtonTitle isEqual:@"YES!"])
+             return %orig;
+
+    }];
+
+
+  return;
+}
+
+
+%end 
+
+
+
+
 //
